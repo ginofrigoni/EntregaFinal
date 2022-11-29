@@ -61,6 +61,11 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'blog_project.urls'
 
+CSRF_TRUSTED_ORIGINS = [
+    'web-production-baa7.up.railway.app',
+    'roser.frigoni.com',
+]
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
